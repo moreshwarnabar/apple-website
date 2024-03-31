@@ -1,7 +1,16 @@
-import React from 'react';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Highlights from "./components/Highlights";
 
 const App = () => {
-  return <h1 className="flex text-3xl font-bold underline">Hello World</h1>;
+  return (
+    <main className="bg-black">
+      <Navbar />
+      <Hero />
+      <Highlights />
+    </main>
+  );
 };
 
 export default App;

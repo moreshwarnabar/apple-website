@@ -109,7 +109,6 @@ const VideoCarousel = () => {
   }, [videoId, startPlay]);
 
   const handleProcess = (type, i) => {
-    console.log(isPlaying);
     switch (type) {
       case "video-end":
         setVideo((prev) => ({ ...prev, isEnd: true, videoId: i + 1 }));
